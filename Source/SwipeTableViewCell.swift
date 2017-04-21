@@ -19,7 +19,7 @@ open class SwipeTableViewCell: UITableViewCell {
     
     var animator: SwipeAnimator?
 
-    var state = SwipeState.center
+    public var state = SwipeState.center
     var originalCenter: CGFloat = 0
     
     weak var tableView: UITableView?
@@ -76,7 +76,7 @@ open class SwipeTableViewCell: UITableViewCell {
     func configure() {
         clipsToBounds = false
         
-        addGestureRecognizer(tapGestureRecognizer)
+//        addGestureRecognizer(tapGestureRecognizer)
         addGestureRecognizer(panGestureRecognizer)
     }
     
